@@ -1,6 +1,10 @@
 import streamlit as st
 import re
 from nltk.tokenize import word_tokenize
+
+# Unduh resource NLTK yang dibutuhkan
+nltk.download('stopwords')
+
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import pickle
