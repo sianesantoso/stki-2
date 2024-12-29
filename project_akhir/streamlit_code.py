@@ -1,6 +1,8 @@
 import streamlit as st
 import re
 import nltk
+nltk.data.path.append('project_akhir/nltk_data')
+
 from nltk.tokenize import word_tokenize
 
 # Unduh resource NLTK yang dibutuhkan
