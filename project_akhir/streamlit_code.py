@@ -7,6 +7,11 @@ from nltk.tokenize import word_tokenize
 
 # Unduh resource NLTK yang dibutuhkan
 nltk.download('stopwords')
+# Pastikan resource 'punkt' tersedia
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')  # Jika belum ditemukan, download resource 'punkt'
 # Unduh resource 'punkt' untuk tokenisasi
 nltk.download('punkt')
 
