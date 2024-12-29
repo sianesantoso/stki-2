@@ -12,8 +12,6 @@ try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
     nltk.download('punkt')  # Jika belum ditemukan, download resource 'punkt'
-# Unduh resource 'punkt' untuk tokenisasi
-nltk.download('punkt')
 
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
