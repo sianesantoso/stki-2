@@ -7,11 +7,7 @@ from nltk.tokenize import word_tokenize
 
 # Unduh resource NLTK yang dibutuhkan
 nltk.download('stopwords')
-# Pastikan resource 'punkt' tersedia
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')  # Jika belum ditemukan, download resource 'punkt'
+nltk.download('punkt_tab')
 
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
