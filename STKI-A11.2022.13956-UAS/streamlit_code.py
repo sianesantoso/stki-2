@@ -1,5 +1,7 @@
 import streamlit as st
 import re
+import nltk
+nltk.data.path.append('STKI-A11.2022.13956/nltk_data')
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
