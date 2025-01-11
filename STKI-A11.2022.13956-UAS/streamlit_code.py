@@ -1,7 +1,7 @@
 import streamlit as st
 import re
 import nltk 
-nltk.download('punkt')
+nltk.download('wordnet')
 from nltk.tokenize import word_tokenize
 nltk.download('stopwords')
 nltk.download('punkt_tab')
