@@ -76,7 +76,7 @@ st.markdown('<p class="title">SENTIMEN ANALISIS IMDB</p>', unsafe_allow_html=Tru
 st.markdown('<p class="description">Masukkan ulasan film Anda untuk mengetahui apakah sentimennya positif atau negatif.</p>', unsafe_allow_html=True)
 
 # Input dari pengguna
-user_input = st.text_area("Tulis ulasan di sini :", placeholder="Misalnya: The movie was fantastic!", height=200)
+user_input = st.text_area("Tulis ulasan dalam bahasa inggris :", placeholder="Misalnya: The movie was fantastic!", height=200)
 
 if st.button("Prediksi", key="predict_button"):
     if user_input:
