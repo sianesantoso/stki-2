@@ -19,10 +19,10 @@ def preprocess_text(text):
     return ' '.join(filtered_tokens)
 
 # Muat vectorizer dan model
-with open('vectorizer.pkl', 'rb') as file:
+with open('STKI-A11.2022.13956-UAS/vectorizer.pkl', 'rb') as file:
     tfidf = pickle.load(file)
 
-with open('sentiment_model.pkl', 'rb') as file:
+with open('STKI-A11.2022.13956-UAS/sentiment_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Streamlit UI
